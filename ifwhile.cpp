@@ -1,5 +1,4 @@
 #include <iostream>
-
 #include <math.h>
 using namespace std;
 int main()
@@ -43,12 +42,12 @@ int main()
 
     else if (cnt == 4) //elif - else if, иначе если, тоже самое что и else но теперь можем задать новое условие
     {
-        cout<<"Third Block"
+        cout<<"Third Block";
     }
     
     if (cnt < 2 || cnt > 10) //|| или, если хотя бы одно из условий выполняется, то выполнится код
     {
-        cout<<"Forth Block"
+        cout<<"Forth Block";
     }
 
     //Пример

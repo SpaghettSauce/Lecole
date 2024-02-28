@@ -1,7 +1,7 @@
 #include <iostream>
 #include <math.h>
 #include "Func.cpp"
-using namespace mt;
+using namespace lol;//mt это пространство имен, используем чтобы функции с одиннаковыми названиями не пересекались (см строку 65)
 
 // Функция, она принимает на вход аргументы, и выдает значение в ответ
 int/*<-тип возвращаемых данных*/ sumOfDigits/*<-название функции*/(int x)/*<-параметры (аргументы) функции*/
@@ -58,20 +58,11 @@ void printMenu(int& n)
     std::cout << "1. Press K to write something" << std::endl;
     std::cin >> n;
 }
-bool isPrime(int x)
-{
-    if (x < 2)
-        return false;
-    for (int d = 2; d <= sqrt(x); d++)
-    {
-        if (x % d == 0)
-            return false;
-    }
-    return true;
-}
+
 
 int main()
 {
+    std::cout<<lol::cout(123);//используем свою функцию cout, через пространство имен lol
     std::string names = "lol";
     int n;
     printMenu(n);
@@ -93,7 +84,7 @@ int main()
     int q;
     std::cin >> q;
 
-    if (isPrime(q))
+    if (lol::isPrime(q))
         std::cout << "Prime" << std::endl;
     else
         std::cout << "Not prime" << std::endl;

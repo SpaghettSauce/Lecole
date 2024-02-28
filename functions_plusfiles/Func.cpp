@@ -1,6 +1,6 @@
 #include "Func.hpp"
-
-namespace mt
+#include <cmath>
+namespace lol
 {
     int cout(int x)
     {
@@ -13,4 +13,15 @@ namespace mt
         }
         return sum;
     }
+    bool isPrime(int x)
+{
+    if (x < 2)
+        return false;
+    for (int d = 2; d <= sqrt(x); d++)
+    {
+        if (x % d == 0)
+            return false;
+    }
+    return true;
+}
 }
