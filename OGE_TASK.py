@@ -15,7 +15,7 @@ if flag = true : print("YES")
 else: print ("No")
 print(middle_speed)
 
-пример решения с сайта:
+пример решения:
  s = 0.0
 b = False
 n = int(input())
