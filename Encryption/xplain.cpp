@@ -99,7 +99,7 @@ int encrypt(int data, int k, int s) {
     int result = 1;
     
     while (k > 0) {
-        if (k & 1) {
+        if (k & 1) { //постоянно генерируем новое k, пока НОД не будет равен 1, так k будет взаимно простым с s
             result = (result * data) % s;
         }
         data = (data * data) % s;
