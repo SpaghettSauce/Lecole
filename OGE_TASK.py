@@ -15,8 +15,8 @@ if flag = true : print("YES")
 else: print ("No")
 print(middle_speed)
 
-пример решения:
- s = 0.0
+пример решения:'''
+s = 0.0
 b = False
 n = int(input())
 for i in range(n):
@@ -29,4 +29,3 @@ if b:
     print('YES')
 else:
     print('NO')
-'''
